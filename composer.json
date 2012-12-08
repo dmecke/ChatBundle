@@ -1,7 +1,7 @@
 {
     "name": "cunningsoft/chat-bundle",
     "type": "symfony-bundle",
-    "description": "Provides a chat system",
+    "description": "A chat bundle for Symfony2",
     "keywords": ["chat", "communication"],
     "homepage": "https://github.com/dmecke/ChatBundle",
     "license": "MIT",
@@ -17,7 +17,8 @@
     ],
     "require": {
         "symfony/symfony": "2.1.*",
-        "doctrine/orm": ">=2.2.0"
+        "doctrine/orm": ">=2.2.0",
+        "knplabs/knp-time-bundle": "dev-master"
     },
     "autoload": {
         "psr-0": {
