@@ -14,7 +14,7 @@ Installation
     }
     ```
 
-2. Run `composer install cunningsoft/chat-bundle` to install the new dependencies.
+2. Run `composer update cunningsoft/chat-bundle` to install the new dependencies.
 
 3. Register the new bundle in your `AppKernel.php`:
 
