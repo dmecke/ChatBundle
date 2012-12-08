@@ -1,0 +1,28 @@
+{
+    "name": "cunningsoft/chat-bundle",
+    "type": "symfony-bundle",
+    "description": "Provides a chat system",
+    "keywords": ["chat", "communication"],
+    "homepage": "https://github.com/dmecke/ChatBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Mecke",
+            "homepage": "https://github.com/dmecke"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/dmecke/ChatBundle/contributors"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "2.1.*",
+        "doctrine/orm": ">=2.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cunningsoft\\ChatBundle": ""
+        }
+    },
+    "target-dir": "Cunningsoft/ChatBundle"
+}
