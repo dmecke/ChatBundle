@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-        "symfony/symfony": "2.1.*",
+        "symfony/symfony": ">=2.1.0",
         "doctrine/orm": ">=2.2.0",
-        "knplabs/knp-time-bundle": "dev-master"
+        "knplabs/knp-time-bundle": "1.1.*"
     },
     "autoload": {
         "psr-0": {
