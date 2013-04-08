@@ -74,12 +74,22 @@ Installation
         number_of_messages: 10 // messages to be shown in chat
     ```
 
-8. Render the chat in your template:
+8. Import routes:
+
+    ```yaml
+    // app/config/routing.yml
+    // ...
+    cunningsoft_chat_bundle:
+        resource: "@ChatBundle/Controller"
+        type: annotation
+    ```
+
+9. Render the chat in your template:
 
     ```twig
     // src/Acme/ProjectBundle/Resources/views/Default/index.html.twig
     // ...
-    {% render 'ChatBundle:Chat:show' %}
+    {% render(controller('ChatBundle:Chat:show')) %}
     // ...
     ```
 
