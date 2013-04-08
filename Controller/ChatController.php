@@ -41,10 +41,11 @@ class ChatController extends Controller
         $message->setAuthor($this->getUser());
         $message->setChannel('default');
         $message->setMessage($request->get('message'));
+        $message->setInsertDate(new \DateTime());
         $this->getDoctrine()->getManager()->persist($message);
         $this->getDoctrine()->getManager()->flush();
 
-        return $this->redirect($this->generateUrl('index'));
+        return $this->redirect($request->headers->get('referer'));
     }
 
     /**
