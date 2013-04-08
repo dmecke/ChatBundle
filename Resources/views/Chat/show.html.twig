@@ -1,13 +1,13 @@
-<form action="{{ path('chat_post') }}" method="post">
+<form action="{{ path('cunningsoft_chat_post') }}" method="post">
     <label for="chatMessage">Message</label>
     <input type="text" name="message" id="chatMessage" />
     <input type="submit" value="submit" />
 </form>
-{% render 'ChatBundle:Chat:list' %}
+{% render(controller('ChatBundle:Chat:list')) %}
 <script type="text/javascript">
 function updateChat()
 {
-    $.post('{{ path('chat_list') }}', function(data) {
+    $.post('{{ path('cunningsoft_chat_list') }}', function(data) {
         $('#chat').html(data);
         setTimeout('updateChat()', {{ updateInterval }});
     });

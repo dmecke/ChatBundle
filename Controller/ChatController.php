@@ -18,7 +18,7 @@ class ChatController extends Controller
     /**
      * @return Response
      *
-     * @Route("", name="chat_show")
+     * @Route("", name="cunningsoft_chat_show")
      * @Template
      */
     public function showAction()
@@ -33,7 +33,7 @@ class ChatController extends Controller
      *
      * @return RedirectResponse
      *
-     * @Route("/post", name="chat_post")
+     * @Route("/post", name="cunningsoft_chat_post")
      */
     public function postAction(Request $request)
     {
@@ -48,7 +48,7 @@ class ChatController extends Controller
     }
 
     /**
-     * @Route("/list", name="chat_list")
+     * @Route("/list", name="cunningsoft_chat_list")
      * @Template
      */
     public function listAction()

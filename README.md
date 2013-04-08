@@ -1,3 +1,7 @@
+Important
+=========
+Please change your composer.json to require version `0.1.*` (if you use Symfony 2.1.*) or `0.2.*` (if you use Symfony 2.2.*) of this bundle instead of `dev-master` to avoid conflicts!
+
 Installation
 ============
 
@@ -78,3 +82,14 @@ Installation
     {% render 'ChatBundle:Chat:show' %}
     // ...
     ```
+
+
+Changelog
+=========
+
+* 0.2 (master)
+Upgrade to Symfony 2.2.* - dropped support for Symfony 2.1.*
+
+* 0.1
+First working version. Support for Symfony 2.1.*
+
