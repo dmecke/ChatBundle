@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ChatExtension extends Extension
+class CunningsoftChatExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -23,7 +23,7 @@ class ChatExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         foreach ($config as $k => $v) {
-            $container->setParameter('chat.' . $k, $v);
+            $container->setParameter('cunningsoft_chat.' . $k, $v);
         }
     }
 }

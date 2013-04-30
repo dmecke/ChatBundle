@@ -24,7 +24,7 @@ class ChatController extends Controller
     public function showAction()
     {
         return array(
-            'updateInterval' => $this->container->getParameter('chat.update_interval'),
+            'updateInterval' => $this->container->getParameter('cunningsoft_chat.update_interval'),
         );
     }
 
@@ -54,10 +54,10 @@ class ChatController extends Controller
      */
     public function listAction()
     {
-        $messages = $this->getDoctrine()->getRepository('ChatBundle:Message')->findBy(
+        $messages = $this->getDoctrine()->getRepository('CunningsoftChatBundle:Message')->findBy(
             array('channel' => 'default'),
             array('id' => 'desc'),
-            $this->container->getParameter('chat.number_of_messages')
+            $this->container->getParameter('cunningsoft_chat.number_of_messages')
         );
 
         return array(

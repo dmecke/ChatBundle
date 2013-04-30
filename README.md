@@ -1,7 +1,3 @@
-Important
-=========
-Please change your composer.json to require version `0.1.*` (if you use Symfony 2.1.*) or `0.2.*` (if you use Symfony 2.2.*) of this bundle instead of `dev-master` to avoid conflicts!
-
 Installation
 ============
 
@@ -13,7 +9,7 @@ Installation
         // ...
         require: {
             // ...
-            "cunningsoft/chat-bundle": "0.2.*"
+            "cunningsoft/chat-bundle": "0.3.*"
         }
     }
     ```
@@ -27,7 +23,7 @@ Installation
     // in AppKernel::registerBundles()
     $bundles = array(
         // ...
-        new Cunningsoft\ChatBundle\ChatBundle(),
+        new Cunningsoft\ChatBundle\CunningsoftChatBundle(),
         // ...
     );
     ```
@@ -80,7 +76,7 @@ Installation
     // app/config/routing.yml
     // ...
     cunningsoft_chat_bundle:
-        resource: "@ChatBundle/Controller"
+        resource: "@CunningsoftChatBundle/Controller"
         type: annotation
     ```
 
@@ -89,15 +85,17 @@ Installation
     ```twig
     // src/Acme/ProjectBundle/Resources/views/Default/index.html.twig
     // ...
-    {% render(controller('ChatBundle:Chat:show')) %}
+    {% render(controller('CunningsoftChatBundle:Chat:show')) %}
     // ...
     ```
 
 
 Changelog
 =========
+* 0.3 (master)
+Included "Cunningsoft" into the namespace to avoid conflicts
 
-* 0.2 (master)
+* 0.2
 Upgrade to Symfony 2.2.* - dropped support for Symfony 2.1.*
 
 * 0.1

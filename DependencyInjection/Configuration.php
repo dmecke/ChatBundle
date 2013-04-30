@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('chat');
+        $rootNode = $treeBuilder->root('cunningsoft_chat');
 
         $rootNode->children()
             ->scalarNode('update_interval')->defaultValue(5000)->end()
