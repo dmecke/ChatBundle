@@ -13,7 +13,7 @@ Installation
         // ...
         require: {
             // ...
-            "cunningsoft/chat-bundle": "dev-master"
+            "cunningsoft/chat-bundle": "0.2.*"
         }
     }
     ```
