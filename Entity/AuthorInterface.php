@@ -7,5 +7,5 @@ interface AuthorInterface
     /**
      * @return string
      */
-    public function getUsername();
+    public function __toString();
 }
