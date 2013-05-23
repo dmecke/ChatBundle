@@ -17,10 +17,13 @@ function postMessage()
 }
 function updateChat()
 {
+    if (this.timer)
+        clearTimeout(this.timer);
+
     $.post('{{ path('cunningsoft_chat_list') }}', function(data) {
         $('#chat').html(data);
     });
+    this.timer = setTimeout('updateChat()', {{ updateInterval }});
 }
-setInterval('updateChat()', {{ updateInterval }});
 updateChat();
 </script>
