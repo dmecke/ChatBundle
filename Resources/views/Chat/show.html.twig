@@ -1,11 +1,11 @@
-<form action="{{ path('cunningsoft_chat_post') }}" method="post">
+<form id="chatForm" action="{{ path('cunningsoft_chat_post') }}" method="post">
     <label for="chatMessage">Message</label>
     <input type="text" name="message" id="chatMessage" />
-    <input id="submitButton" type="submit" value="submit" />
+    <input type="submit" value="submit" />
 </form>
 {% render(controller('CunningsoftChatBundle:Chat:list')) %}
 <script type="text/javascript">
-$("#submitButton").submit(function() {
+$("#chatForm").submit(function() {
     postMessage();
     updateChat();
     return false;
