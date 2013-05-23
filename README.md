@@ -66,8 +66,10 @@ Installation
     // app/config/config.yml
     // ...
     chat:
-        update_interval: 5000 // refresh interval in milliseconds
-        number_of_messages: 10 // messages to be shown in chat
+        # refresh interval in milliseconds
+        update_interval: 5000
+        # messages to be shown in chat
+        number_of_messages: 10
     ```
 
 8. Import routes:
