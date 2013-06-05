@@ -16,13 +16,13 @@
         }
     ],
     "require": {
-        "symfony/symfony": "2.2.*",
+        "symfony/symfony": "2.3.*",
         "doctrine/orm": ">=2.2.0",
         "knplabs/knp-time-bundle": "1.1.*"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3-dev"
+            "dev-master": "0.4-dev"
         }
     },
     "autoload": {
