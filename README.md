@@ -65,7 +65,7 @@ Installation
     ```yaml
     // app/config/config.yml
     // ...
-    chat:
+    cunningsoft_chat:
         # refresh interval in milliseconds
         update_interval: 5000
         # messages to be shown in chat
