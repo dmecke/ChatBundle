@@ -9,7 +9,7 @@ Installation
         // ...
         require: {
             // ...
-            "cunningsoft/chat-bundle": "0.3.*"
+            "cunningsoft/chat-bundle": "0.4.*"
         }
     }
     ```
@@ -94,7 +94,10 @@ Installation
 
 Changelog
 =========
-* 0.3 (master)
+* 0.4 (master)
+Upgrade to Symfony 2.3.* - dropped support for Symfony 2.2.*
+
+* 0.3
 Included "Cunningsoft" into the namespace to avoid conflicts
 
 * 0.2
