@@ -45,7 +45,7 @@ class ChatController extends Controller
         $this->getDoctrine()->getManager()->persist($message);
         $this->getDoctrine()->getManager()->flush();
 
-        return $this->redirect($request->headers->get('referer'));
+        return new Response('Successful');
     }
 
     /**

@@ -7,12 +7,19 @@
 <script type="text/javascript">
 $("#chatForm").submit(function() {
     postMessage();
-    updateChat();
     return false;
 });
 function postMessage()
 {
-    $.post('{{ path('cunningsoft_chat_post') }}', { 'message': $("#chatMessage").val() });
+    $.post('{{ path('cunningsoft_chat_post', {'channel': channel}) }}', 
+           { 'message': $("#chatMessage").val() },
+           function(data) {
+             // Check that the post function completed
+             if (data === 'Successful') {
+               updateChat();
+             }
+           }
+          );
     $("#chatMessage").val('');
 }
 function updateChat()
