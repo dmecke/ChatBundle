@@ -3,9 +3,9 @@
 namespace Cunningsoft\ChatBundle\Controller;
 
 use Cunningsoft\ChatBundle\Entity\Message;
+use Cunningsoft\GladiatorenBundle\Controller\BaseController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @Route("/chat")
  */
-class ChatController extends Controller
+class ChatController extends BaseController
 {
     /**
      * @return Response
