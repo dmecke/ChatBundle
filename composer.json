@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "2.3.*",
+        "symfony/symfony": "~2.3",
         "doctrine/orm": ">=2.2.0",
         "knplabs/knp-time-bundle": "1.1.*"
     },
