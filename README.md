@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dmecke/ChatBundle.svg)](https://travis-ci.org/dmecke/ChatBundle)
+
 Installation
 ============
 
@@ -94,7 +96,10 @@ Installation
 
 Changelog
 =========
-* 0.4 (master)
+* 0.5 (master)
+Support for newer Symfony versions
+
+* 0.4
 Upgrade to Symfony 2.3.* - dropped support for Symfony 2.2.*
 
 * 0.3
@@ -106,3 +111,7 @@ Upgrade to Symfony 2.2.* - dropped support for Symfony 2.1.*
 * 0.1
 First working version. Support for Symfony 2.1.*
 
+
+Notes
+=====
+Please also visit my Open Source Browsergame Project [Open Soccer Star](https://github.com/dmecke/OpenSoccerStar).
