@@ -11,7 +11,7 @@ $("#chatForm").submit(function() {
 });
 function postMessage()
 {
-    $.post('{{ path('cunningsoft_chat_post', {'channel': channel}) }}', 
+    $.post('{{ path('cunningsoft_chat_post', {'channel': 'default'}) }}', 
            { 'message': $("#chatMessage").val() },
            function(data) {
              // Check that the post function completed
