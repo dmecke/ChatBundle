@@ -11,7 +11,7 @@ Installation
         // ...
         require: {
             // ...
-            "cunningsoft/chat-bundle": "0.4.*"
+            "cunningsoft/chat-bundle": "0.5.*"
         }
     }
     ```
