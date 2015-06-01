@@ -18,7 +18,7 @@ class ChatController extends BaseController
     /**
      * @return Response
      *
-     * @Route("/{channel}", name="cunningsoft_chat_show", defaults={"channel" = "default"})
+     * @Route("/show/{channel}", name="cunningsoft_chat_show", defaults={"channel" = "default"})
      * @Template
      */
     public function showAction($channel)
